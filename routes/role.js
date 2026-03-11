@@ -13,11 +13,11 @@ const router = express.Router();
 
 router.post("/", createRole);
 router.get("/", getAllRoles);
-router.get("//:id", getRoleById);
-router.put("//:id", updateRole);
-router.delete("//:id", deleteRole);
+router.get("/:id", getRoleById);
+router.put("/:id", updateRole);
+router.delete("/:id", deleteRole);
 
 // /roles/:id/users
-router.get("//:id/users", getUsersByRole);
+router.get("/:id/users", getUsersByRole);
 
 module.exports = router;
